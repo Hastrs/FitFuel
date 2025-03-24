@@ -676,10 +676,6 @@
     
     /* Responsive Styles */
     @media (max-width: 991px) {
-       .header, .logo {
-    animation: none !important;
-    transition: none !important;
-  }
       .hero-content {
         flex-direction: column;
       }
