@@ -1,11 +1,8 @@
-
-    // Initialize AOS animations
-if (window.innerWidth > 720) {
-  AOS.init({
-    once: true,
-    offset: 100
-  });
-}
+// Initialize AOS animations
+AOS.init({
+  once: true,
+  offset: 100
+});
     
     // Mobile Menu Toggle
     const menuToggle = document.getElementById('menuToggle');
