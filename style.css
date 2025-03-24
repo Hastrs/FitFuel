@@ -676,12 +676,6 @@
     
     /* Responsive Styles */
     @media (max-width: 991px) {
-       .header, .logo {
-    display: block !important;
-    opacity: 1 !important;
-    animation: unset !important;
-    transition: unset !important;
-       }
       .hero-content {
         flex-direction: column;
       }
