@@ -684,7 +684,9 @@
         width: 100%;
         text-align: center;
       }
-      
+      .hero-image{
+        width: 400px;
+      }
       .hero-text {
         margin-bottom: 40px;
       }
@@ -755,10 +757,19 @@
       }
       
       .hero h1 {
-        font-size: 36px;
+        font-size: 32px;
       }
       
       .benefit-card {
         width: 100%;
       }
+       .floating-leaf {
+    display: none;
+       }
+ .logo{
+        font-size: 22px;
+      }
+       
     }
+
+
