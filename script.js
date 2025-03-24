@@ -35,3 +35,43 @@
         header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
       }
     });
+
+// service-worker.js
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/6.5.3/workbox-sw.js');
+
+if (workbox) {
+  console.log("Workbox is loaded");
+
+  workbox.routing.registerRoute(
+    ({request}) =>
+      request.destination === 'image' ||
+      request.destination === 'script' ||
+      request.destination === 'style',
+    new workbox.strategies.CacheFirst({
+      cacheName: 'fitfuel-static-assets',
+      plugins: [
+        new workbox.expiration.ExpirationPlugin({
+          maxAgeSeconds: 30 * 24 * 60 * 60, 
+          purgeOnQuotaError: true, 
+        }),
+      ],
+    })
+  );
+
+  workbox.routing.registerRoute(
+    ({request}) => request.destination === 'document',
+    new workbox.strategies.NetworkFirst({
+      cacheName: 'fitfuel-html-cache',
+      plugins: [
+        new workbox.expiration.ExpirationPlugin({
+          maxAgeSeconds: 30 * 24 * 60 * 60, 
+          purgeOnQuotaError: true,
+        }),
+      ],
+    })
+  );
+  
+} else {
+  console.log("Workbox didn't load");
+}
+
