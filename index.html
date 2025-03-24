@@ -4,24 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="FitFuel - Get personalized healthy meal plans designed by expert nutritionists. Transform your health with our tailored meal plans.">
-  <title>FitFuel - Personalized Healthy Meal Plans</title>
-<meta name="title" content="FitFuel - Personalized Healthy Meal Plans">
-<meta name="description" content="Get your personalized healthy meal plan designed by expert nutritionists. Transform your health with our tailored meal plans.">
-<meta name="keywords" content="Healthy Meals, Meal Plans, Nutrition, Diet, Fitness, Weight Loss, Organic Food, Personalized Diet">
-<meta name="author" content="Hassan Dev">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hastrs.github.io/FitFuel/">
-<meta property="og:title" content="FitFuel - Personalized Healthy Meal Plans">
-<meta property="og:description" content="Transform your health with customized meal plans created by expert nutritionists.">
-<meta property="og:image" content="./imgs/hero.webp">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="title" content="FitFuel - Personalized Healthy Meal Plans">
+  <meta name="keywords" content="Healthy Meals, Meal Plans, Nutrition, Diet, Fitness, Weight Loss, Organic Food, Personalized Diet">
+  <meta name="author" content="Hassan Dev">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  </noscript>
+  <!-- Open Graph Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yourwebsite.com/">
+  <meta property="og:title" content="FitFuel - Personalized Healthy Meal Plans">
+  <meta property="og:description" content="Transform your health with customized meal plans created by expert nutritionists.">
+  <meta property="og:image" content="./imgs/hero.webp">
+  
+  <!-- CSS Libraries -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Main CSS -->
   <link rel="stylesheet" href="style.css">
+  
+  <title>FitFuel - Personalized Healthy Meal Plans</title>
 </head>
 <body>
   
+  <!-- Floating Leaves -->
   <div class="floating-leaf leaf-1">
     <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M21 3C21 15.3594 9.36 21 3 21C3 21 3 21 3 21C3 14.64 8.64 9 15 9C15 15.36 9.36 21 3 21" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -76,7 +84,7 @@
           <button class="btn">Get Your Plan Now</button>
         </div>
         <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-          <img src="./imgs/hero-img.webp" alt="Healthy meal bowl with fresh ingredients" class="salad-img">
+          <img src="./imgs/hero-img.webp" alt="Healthy meal bowl with fresh ingredients" class="salad-img" loading="lazy">
         </div>
       </div>
     </div>
@@ -350,6 +358,6 @@
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
