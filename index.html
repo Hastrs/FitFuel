@@ -18,6 +18,7 @@
   <meta property="og:title" content="FitFuel - Personalized Healthy Meal Plans">
   <meta property="og:description" content="Transform your health with customized meal plans created by expert nutritionists.">
   <meta property="og:image" content="./imgs/hero.webp">
+  <link rel="preload" href="./imgs/hero-img.webp" as="image" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="stylesheet" href="style.css">
@@ -81,7 +82,9 @@
           <button class="btn">Get Your Plan Now</button>
         </div>
         <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
-          <img src="./imgs/hero-img.webp" alt="Healthy meal bowl with fresh ingredients" class="salad-img"  width="100%" height="100%">
+          <img src="./imgs/hero-img.webp" alt="Healthy meal bowl with fresh ingredients" class="salad-img"    width="1200" 
+  height="1200" 
+  fetchpriority="high">
         </div>
       </div>
     </div>
